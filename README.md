@@ -9,6 +9,11 @@ that maintains physical consistency**. In contrast, baseline approaches fail to 
 editing tasks, leading to erroneous results.
 # Framework
 ![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Introduction.png)
+Figure 2: **Overview of the MURE framework.** **Left:** Our framework leverages an interleaved
+text-image CoT to achieve high-fidelity image editing. **Right:** The Multimodal Deep Confidence
+(MMDC) reasoning explores a tree of visual reasoning paths at each step. It prunes low-quality
+branches based on a deep confidence score from a reward model, ensuring a superior trajectory toward the final edited image.
+
 # Introduction
 Image editing with natural language has gained signiffcant popularity, yet existing
 methods struggle with intricate object intersections and ffne-grained spatial
@@ -38,6 +43,10 @@ benchmarks, establishing a more effective reasoning framework for visual editing
 # CoT-Edit-14K Dataset Construction
 
 ![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Dataset.png)
+Figure 3: **MURE Dataset Construction Process.** **Top:** The visual annotation pipeline constructs
+explicit visual cues, including positional masks that define intended edited regions and valid representations of new content. **Bottom:** The textual annotation pipeline generates detailed textual
+descriptions based on the annotated CoT images from the top pipeline.
+
 # Qualitative Results for Image Editing
 
 ![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Table1.png)
