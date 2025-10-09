@@ -37,7 +37,13 @@ show that our method yields signiffcant improvements across three image editing
 benchmarks, establishing a more effective reasoning framework for visual editing.
 # CoT-Edit-14K Dataset Construction
 
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Dataset.png)
 # Qualitative Results for Image Editing
+
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Table1.png)
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Table2.png)
+# Vision Comparison Results
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Vis.png)
 # To Do List 
 1. Release the training and inference code of MURE
 2. Release the CoT-Edit-14K Dataset
