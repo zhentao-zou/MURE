@@ -1,9 +1,43 @@
 # MURE
 Beyond Textual CoT: Interleaved Text-image chains with Deep Confidence Reasoning for Image Editing
 # Overview
-! https://github.com/zhentao-zou/MURE/Fig/teaser.png
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/teaser.png)
 Figure 1: Visualization of our interleaved text-visual reasoning process and a comparative result. 
 Given the prompt “swap the tv for a lizard”, the MURE model **correctly performs multi-step
 reasoning to remove the lizard and its reflection in the mirror, generating a final edited image
 that maintains physical consistency**. In contrast, baseline approaches fail to handle this complex
 editing tasks, leading to erroneous results.
+# Framework
+![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/Introduction.png)
+# Introduction
+Image editing with natural language has gained signiffcant popularity, yet existing
+methods struggle with intricate object intersections and ffne-grained spatial
+relationships due to the lack of an explicit reasoning process. While Chain-of-Thought
+(CoT) has been explored to enhance reasoning, purely textual CoT or
+CoT augmented with coordinate information is fundamentally limited in its ability
+to represent intricate visual layouts and lacks the necessary visual cues to guide
+the generation of ffne-grained, pixel-level details. To address these challenges,
+we propose **Mu**ltimodal **R**easoning **E**dit (**MURE**), a novel framework that **shifts
+the visual editing process from purely text-based reasoning to a series of inter-leaved
+textual and visual rationales.** Our framework performs image editing us-ing
+a natively multimodal, interleaved text-image CoT. This approach generates
+a step-by-step chain of reasoning where a textual description is followed by a
+corresponding visual cue, such as a positional mask that deffned intended edited
+regions or a representation of new content. Furthermore, to mitigate the hallu-cination
+phenomenon of large language models, we introduce **M**ulti**m**odal Deep
+Conffdence (MMDC) reasoning paradigm. This paradigm explores a tree of vi-sual
+reasoning paths at each step. By pruning low-quality branches using a deep
+conffdence score from a reward model, it ensures the model consistently follows
+a high-quality trajectory towards the ffnal edited result. The proposed method de-composes
+complex editing tasks into interdependent sub-tasks, achieving greater
+precision at each stage and yielding high-ffdelity edited results. We deffne the
+formulation for interleaved text-image chains and release the first CoT-Edit-14K
+dataset, comprising 14K high-quality editing examples. Extensive experiments
+show that our method yields signiffcant improvements across three image editing
+benchmarks, establishing a more effective reasoning framework for visual editing.
+# CoT-Edit-14K Dataset Construction
+
+# Qualitative Results for Image Editing
+# To Do List 
+1. Release the training and inference code of MURE
+2. Release the CoT-Edit-14K Dataset
