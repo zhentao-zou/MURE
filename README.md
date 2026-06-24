@@ -56,3 +56,4 @@ descriptions based on the annotated CoT images from the top pipeline.
 # To Do List 
 1. Release the training and inference code of MURE
 2. Release the CoT-Edit-14K Dataset
+3. The code and dataset are currently **undergoing internal confidentiality review. As this process may take some time, we appreciate your patience**and will release them as soon as final approval is granted.
