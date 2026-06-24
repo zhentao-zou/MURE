@@ -1,5 +1,15 @@
 # MURE
-Beyond Textual CoT: Interleaved Text-image chains with Deep Confidence Reasoning for Image Editing
+Unlocking Complex Image Editing via Natively Interleaved Visual Textual CoT with Deep Confidence Reasoning
+
+![ECCV 2026](https://img.shields.io/badge/ECCV-2026-blue)
+![Code Status](https://img.shields.io/badge/Code-Under_Review-orange)
+
+## 📢 Announcement
+**MURE** has been accepted to **ECCV 2026**!
+
+> **Note on Release:** The code and datasets are currently undergoing internal confidentiality review. As this process may take some time, we appreciate your patience and will release them as soon as final approval is granted.
+
+---
 # Overview
 ![alt text](https://github.com/zhentao-zou/MURE/blob/main/Fig/teaser.png)
 Figure 1: Visualization of our interleaved text-visual reasoning process and a comparative result. 
@@ -56,4 +66,4 @@ descriptions based on the annotated CoT images from the top pipeline.
 # To Do List 
 1. Release the training and inference code of MURE
 2. Release the CoT-Edit-14K Dataset
-3. The code and dataset are currently **undergoing internal confidentiality review. As this process may take some time, we appreciate your patience**and will release them as soon as final approval is granted.
+
